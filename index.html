@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
-  <title>정부기관 보안·법령 동향 — 2026-05-14</title>
+  <title>정부기관 보안·법령 동향 — 2026-05-15</title>
   <style>
     /* ── RawBlock Design System ── */
     @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Work+Sans:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap');
@@ -84,8 +84,8 @@
         <i data-lucide="shield-check"></i>
         정부기관 보안·법령 동향
       </div>
-      <span class="header-date">2026년 5월 14일 (목)</span>
-      <span class="header-count">신규 0건</span>
+      <span class="header-date">2026년 5월 15일 (금)</span>
+      <span class="header-count">신규 2건</span>
     </div>
   </header>
 
@@ -115,10 +115,27 @@
       <div class="section-header">
         <span class="section-icon"><i data-lucide="alert-triangle"></i></span>
         <h2 class="section-title">KISA 보호나라</h2>
-        <span class="section-badge">0건</span>
+        <span class="section-badge">2건</span>
       </div>
       <div class="cards">
-        <p class="empty">오늘 신규 업데이트 없음</p>
+        
+      <article class="card">
+        <a class="card-title" href="https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72051" target="_blank" rel="noopener noreferrer">MS 5월 보안 위협에 따른 정기 보안 업데이트 권고</a>
+        <div class="card-meta">
+          <span class="meta-badge alert">🚨 보안공지</span>
+          <span class="meta-date">2026-05-14</span>
+        </div>
+        
+      </article>
+
+      <article class="card">
+        <a class="card-title" href="https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72050" target="_blank" rel="noopener noreferrer">Linux Kernel 보안 업데이트 권고</a>
+        <div class="card-meta">
+          <span class="meta-badge alert">🚨 보안공지</span>
+          <span class="meta-date">2026-05-14</span>
+        </div>
+        
+      </article>
       </div>
     </section>
 
@@ -149,14 +166,23 @@
         <span class="section-icon"><i data-lucide="brain"></i></span>
         <h2 class="section-title">종합 분석</h2>
       </div>
-      <pre class="analysis-body">오늘(2026-05-14) 기준 수집된 신규 게시물이 없습니다.
+      <pre class="analysis-body">KISA 보호나라 - MS 5월 보안 위협에 따른 정기 보안 업데이트 권고
+체크포인트: Windows·Office·Edge 등 MS 전 제품군 대상 5월 Patch Tuesday 패치를 금일 중 긴급 배포 계획 수립 및 WSUS/SCCM 업데이트 승인 여부 확인
 
-모든 모니터링 대상 기관(개인정보보호위원회, KISA 보호나라, 법제처, 과기정통부)에서 신규 항목이 확인되지 않았으므로 별도 분석 사항이 없습니다.</pre>
+KISA 보호나라 - Linux Kernel 보안 업데이트 권고
+체크포인트: 운영 중인 Linux 서버(RHEL·Ubuntu·Debian 계열 포함)의 커널 버전 현황을 즉시 파악하고, 권고 버전 이하 시스템에 대한 패치 일정 및 재부팅 유지보수 윈도우 확보 여부 확인
+
+== 종합 시사점 ==
+🔴 MS 5월 정기 업데이트는 매년 적극적으로 악용되는 제로데이 패치를 포함하는 경우가 많으므로, CVE 심각도(Critical·Important) 분류를 원문 권고문에서 직접 확인한 후 Critical 항목은 72시간 이내 패치 완료를 목표로 긴급 배포 절차를 즉시 가동해야 한다.
+
+🟠 Linux Kernel 취약점은 권한 상승(LPE) 또는 원격 코드 실행(RCE) 벡터로 활용될 가능성이 높으므로, 인터넷 접점 서버 및 컨테이너 호스트 노드를 우선순위로 식별하여 단계적 패치 및 재부팅 계획을 이번 주 내 수립해야 한다.
+
+🟡 반복적인 OS·플랫폼 패치 권고에 신속히 대응하기 위해 자산 인벤토리(OS 버전·패치 이력)와 취약점 관리 플랫폼(VMP) 간 연동 체계를 정비하고, 패치 SLA(Critical 72h·High 7일)를 보안 운영 정책에 명문화하는 것을 검토해야 한다.</pre>
     </section>
   </main>
 
   <footer class="site-footer">
-    마지막 업데이트: 2026-05-14 08:00 KST
+    마지막 업데이트: 2026-05-15 08:00 KST
   </footer>
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
   <script>lucide.createIcons();</script>
