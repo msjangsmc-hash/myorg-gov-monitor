@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
-  <title>정부기관 보안·법령 동향 — 2026-05-19</title>
+  <title>정부기관 보안·법령 동향 — 2026-05-20</title>
   <style>
     /* ── RawBlock Design System ── */
     @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Work+Sans:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap');
@@ -84,8 +84,8 @@
         <i data-lucide="shield-check"></i>
         정부기관 보안·법령 동향
       </div>
-      <span class="header-date">2026년 5월 19일 (화)</span>
-      <span class="header-count">신규 0건</span>
+      <span class="header-date">2026년 5월 20일 (수)</span>
+      <span class="header-count">신규 1건</span>
     </div>
   </header>
 
@@ -115,10 +115,18 @@
       <div class="section-header">
         <span class="section-icon"><i data-lucide="alert-triangle"></i></span>
         <h2 class="section-title">KISA 보호나라</h2>
-        <span class="section-badge">0건</span>
+        <span class="section-badge">1건</span>
       </div>
       <div class="cards">
-        <p class="empty">오늘 신규 업데이트 없음</p>
+        
+      <article class="card">
+        <a class="card-title" href="https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72055" target="_blank" rel="noopener noreferrer">Linux kernel 보안 업데이트 권고</a>
+        <div class="card-meta">
+          <span class="meta-badge alert">🚨 보안공지</span>
+          <span class="meta-date">2026-05-19</span>
+        </div>
+        
+      </article>
       </div>
     </section>
 
@@ -149,14 +157,24 @@
         <span class="section-icon"><i data-lucide="brain"></i></span>
         <h2 class="section-title">종합 분석</h2>
       </div>
-      <pre class="analysis-body">수집 기간 중 신규 게시물 없음.
+      <pre class="analysis-body">[KISA 보호나라] - Linux kernel 보안 업데이트 권고
+체크포인트: 프로덕션 Linux 서버 및 개발 환경 전수의 커널 버전 확인 후 KISA 권고 패치 적용 계획 수립 및 테스트 일정 조율 필수
 
-(개인정보보호위원회·KISA 보호나라·과기정통부·법제처 모두 신규 공시 미발생)</pre>
+== 종합 시사점 ==
+
+🔴 [긴급 조치 사항]
+Linux 커널 취약점은 전체 시스템의 기초 보안을 침해하는 최상위 위협 범주로, 감염 시 루트 권한 탈취 및 전체 인프라 장악으로 확대될 수 있으므로 발표 후 72시간 내 영향도 분석 및 패치 테스트 환경 구성이 필수입니다.
+
+🟠 [단기 조치 사항]
+보안 취약점 패치는 프로덕션 반영 전 동일 환경의 스테이징 서버에서 호환성 검증(애플리케이션 정상 작동 여부, 성능 저하 확인)을 완료해야 하므로, 향후 2주 내 일괄 반영 계획을 운영팀과 협의하여 확정하세요.
+
+🟡 [중기 조치 사항]
+Linux 커널 정책을 주기적 업데이트 리스트 모니터링 체계로 자동화하고, 향후 동일 계열 취약점에 대한 사전 대응 절차(자동 패치 관리 또는 정기 점검 주기)를 정보보호 담당부서와 협의하여 수립하세요.</pre>
     </section>
   </main>
 
   <footer class="site-footer">
-    마지막 업데이트: 2026-05-19 09:19 KST
+    마지막 업데이트: 2026-05-20 08:00 KST
   </footer>
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
   <script>lucide.createIcons();</script>
