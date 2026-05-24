@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
-  <title>정부기관 보안·법령 동향 — 2026-05-24</title>
+  <title>정부기관 보안·법령 동향 — 2026-05-25</title>
   <style>
     /* ── RawBlock Design System ── */
     @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Work+Sans:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap');
@@ -84,8 +84,8 @@
         <i data-lucide="shield-check"></i>
         정부기관 보안·법령 동향
       </div>
-      <span class="header-date">2026년 5월 24일 (일)</span>
-      <span class="header-count">신규 0건</span>
+      <span class="header-date">2026년 5월 25일 (월)</span>
+      <span class="header-count">신규 2건</span>
     </div>
   </header>
 
@@ -115,10 +115,27 @@
       <div class="section-header">
         <span class="section-icon"><i data-lucide="alert-triangle"></i></span>
         <h2 class="section-title">KISA 보호나라</h2>
-        <span class="section-badge">0건</span>
+        <span class="section-badge">2건</span>
       </div>
       <div class="cards">
-        <p class="empty">오늘 신규 업데이트 없음</p>
+        
+      <article class="card">
+        <a class="card-title" href="https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72066" target="_blank" rel="noopener noreferrer">NGINX 제품 보안 업데이트 권고</a>
+        <div class="card-meta">
+          <span class="meta-badge alert">🚨 보안공지</span>
+          <span class="meta-date">2026-05-24</span>
+        </div>
+        
+      </article>
+
+      <article class="card">
+        <a class="card-title" href="https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72065" target="_blank" rel="noopener noreferrer">wolfSSL 제품 보안 업데이트 권고</a>
+        <div class="card-meta">
+          <span class="meta-badge alert">🚨 보안공지</span>
+          <span class="meta-date">2026-05-24</span>
+        </div>
+        
+      </article>
       </div>
     </section>
 
@@ -149,18 +166,24 @@
         <span class="section-icon"><i data-lucide="brain"></i></span>
         <h2 class="section-title">종합 분석</h2>
       </div>
-      <pre class="analysis-body">신규 항목 없음.
+      <pre class="analysis-body">KISA 보호나라 - NGINX 제품 보안 업데이트 권고
+체크포인트: 조직 내 NGINX 배포 현황(버전, 운영 환경)을 즉시 파악하고 보호나라 공지의 취약점 심각도·영향도를 확인해 패치 적용 일정을 수립하세요.
+
+KISA 보호나라 - wolfSSL 제품 보안 업데이트 권고
+체크포인트: wolfSSL 사용 현황(임베디드 장비, IoT 디바이스, 보안 칩 등)을 파악하고 취약점이 TLS/SSL 통신에 미치는 영향을 평가한 후 업데이트 전략을 결정하세요.
 
 == 종합 시사점 ==
 
-본 기간(2026년 5월 24일) 개인정보보호위원회, KISA 보호나라, 과기정통부, 법제처에 신규 공지사항이 없습니다.
+🔴 NGINX와 wolfSSL은 모두 웹·통신 인프라의 핵심 구성요소로서, 보안 업데이트 공지는 취약점 패치를 의미합니다. 각 제품별 심각도 등급과 CVSS 점수를 보호나라 원문에서 즉시 확인하고, 조직 내 영향 범위가 광범위한 경우 단기(1주일 내) 적용 계획을 수립하세요.
 
-다음 모니터링 시점에 최신 정보를 재확인하시기 바랍니다.</pre>
+🟠 NGINX의 경우 웹서버·API 게이트웨이·로드밸런서로 다중 역할을 수행하는 환경이 많으므로, 버전별 호환성 사전 검증 및 롤백 계획을 마련한 후 적용하세요. wolfSSL은 임베디드·IoT 환경에 탑재되어 있을 수 있으므로, 펌웨어 업데이트 필요성 여부를 제조사·공급사에 문의하세요.
+
+🟡 KISA 보호나라 정기 모니터링 체계를 강화해 향후 유사 공지에 즉각 대응할 수 있는 인프라 정책을 수립하세요. 특히 오픈소스 의존성(NGINX, wolfSSL 등)이 많은 조직은 소프트웨어 구성 분석(SCA) 도구 도입을 검토해 취약점 추적 자동화를 실현하세요.</pre>
     </section>
   </main>
 
   <footer class="site-footer">
-    마지막 업데이트: 2026-05-24 08:00 KST
+    마지막 업데이트: 2026-05-25 08:00 KST
   </footer>
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
   <script>lucide.createIcons();</script>
